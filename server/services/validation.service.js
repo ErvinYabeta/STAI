@@ -25,10 +25,12 @@ exports.validate = (answers) => {
 
     for (let i = 0; i < answers.length; i++) {
 
-        if (typeof answers[i] !== "number") {
+        // Number.isInteger tambien descarta decimales como 1.5, que antes
+        // pasaban y dejaban el puntaje fuera de la tabla de baremos.
+        if (!Number.isInteger(answers[i])) {
             return {
                 valid: false,
-                message: `La respuesta ${i + 1} no es un número.`
+                message: `La respuesta ${i + 1} debe ser un número entero.`
             };
         }
 
