@@ -66,7 +66,7 @@ const questions = [
         id: 8,
         scale: SCALE.ESTADO,
         reverse: true,
-        text: "Me siento descanzado.",
+        text: "Me siento descansado.",
         options: OPTIONS.ESTADO
     },
 
@@ -90,7 +90,7 @@ const questions = [
         id: 11,
         scale: SCALE.ESTADO,
         reverse: true,
-        text: "Tengo confianza en mi mismo.",
+        text: "Tengo confianza en mí mismo.",
         options: OPTIONS.ESTADO
     },
 
@@ -162,7 +162,7 @@ const questions = [
         id: 20,
         scale: SCALE.ESTADO,
         reverse: true,
-        text: "Es este momento me siento bien.",
+        text: "En este momento me siento bien.",
         options: OPTIONS.ESTADO
     },
 
@@ -201,7 +201,7 @@ const questions = [
         id: 24,
         scale: SCALE.RASGO,
         reverse: false,
-        text: "Me gustaria ser tan feliz como otros.",
+        text: "Me gustaría ser tan feliz como otros.",
         options: OPTIONS.RASGO
     },
     
@@ -265,7 +265,7 @@ const questions = [
         id: 32,
         scale: SCALE.RASGO,
         reverse: false,
-        text: "Me falta confianza en mi mismo.",
+        text: "Me falta confianza en mí mismo.",
         options: OPTIONS.RASGO
     },
 
@@ -289,7 +289,7 @@ const questions = [
         id: 35,
         scale: SCALE.RASGO,
         reverse: false,
-        text: "Me siento triste (meláncolico).",
+        text: "Me siento triste (melancólico).",
         options: OPTIONS.RASGO
     },
 
@@ -321,7 +321,7 @@ const questions = [
         id: 39,
         scale: SCALE.RASGO,
         reverse: true,
-        text: "Soy una persona estable. ",
+        text: "Soy una persona estable.",
         options: OPTIONS.RASGO
     },
 

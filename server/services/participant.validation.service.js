@@ -9,28 +9,28 @@ exports.validate = (participant) => {
         };
     }
 
-    if (!participant.fullName || participant.fullName.trim() === "") {
+    if (typeof participant.fullName !== "string" || participant.fullName.trim() === "") {
         return {
             valid: false,
             message: "El nombre completo es obligatorio."
         };
     }
 
-    if (!participant.identityCard || participant.identityCard.trim() === "") {
+    if (typeof participant.identityCard !== "string" || participant.identityCard.trim() === "") {
         return {
             valid: false,
             message: "El carnet de identidad es obligatorio."
         };
     }
 
-    if (!participant.phone || participant.phone.trim() === "") {
+    if (typeof participant.phone !== "string" || participant.phone.trim() === "") {
         return {
             valid: false,
             message: "El teléfono es obligatorio."
         };
     }
 
-    if (!participant.city || participant.city.trim() === "") {
+    if (typeof participant.city !== "string" || participant.city.trim() === "") {
         return {
             valid: false,
             message: "La ciudad es obligatoria."
@@ -67,7 +67,7 @@ exports.validate = (participant) => {
 
     if (
         participant.group === GROUP.ADOLESCENTE &&
-        (!participant.grade || participant.grade.trim() === "")
+        (typeof participant.grade !== "string" || participant.grade.trim() === "")
     ) {
         return {
             valid: false,
@@ -77,7 +77,7 @@ exports.validate = (participant) => {
 
     if (
         participant.group === GROUP.UNIVERSITARIO &&
-        (!participant.career || participant.career.trim() === "")
+        (typeof participant.career !== "string" || participant.career.trim() === "")
     ) {
         return {
             valid: false,
