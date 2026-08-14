@@ -1,0 +1,13 @@
+# Dependencias de Node.js (Servidor / Backend)
+node_modules/
+**/node_modules/
+
+# Entorno virtual de Python
+.venv/
+
+# Configuración de VS Code
+.vscode/
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
